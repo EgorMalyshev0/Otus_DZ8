@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE8E9C2227831DED00BE9A10 /* ImageClassifierViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9C2127831DED00BE9A10 /* ImageClassifierViewModel.swift */; };
+		DE8E9C24278328E600BE9A10 /* MyImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9C23278328E600BE9A10 /* MyImageClassifier.mlmodel */; };
 		DEC48E4B277A2F1400F781AC /* DZ_8App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC48E4A277A2F1400F781AC /* DZ_8App.swift */; };
-		DEC48E4D277A2F1400F781AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC48E4C277A2F1400F781AC /* ContentView.swift */; };
 		DEC48E4F277A2F1500F781AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEC48E4E277A2F1500F781AC /* Assets.xcassets */; };
 		DEC48E52277A2F1500F781AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEC48E51277A2F1500F781AC /* Preview Assets.xcassets */; };
+		DEC48E59277A2F3B00F781AC /* ImageClassifierScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC48E58277A2F3B00F781AC /* ImageClassifierScreen.swift */; };
+		DEC48E5B277A32F500F781AC /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC48E5A277A32F500F781AC /* ImagePicker.swift */; };
+		DEC48E5D277A50F900F781AC /* ImageClassifierService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC48E5C277A50F900F781AC /* ImageClassifierService.swift */; };
+		DEC48E60277A513C00F781AC /* ClassifierResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC48E5F277A513C00F781AC /* ClassifierResultModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE8E9C2127831DED00BE9A10 /* ImageClassifierViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassifierViewModel.swift; sourceTree = "<group>"; };
+		DE8E9C23278328E600BE9A10 /* MyImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MyImageClassifier.mlmodel; path = "DZ№8/MyImageClassifier.mlmodel"; sourceTree = SOURCE_ROOT; };
 		DEC48E47277A2F1400F781AC /* DZ№8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DZ№8.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEC48E4A277A2F1400F781AC /* DZ_8App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DZ_8App.swift; sourceTree = "<group>"; };
-		DEC48E4C277A2F1400F781AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DEC48E4E277A2F1500F781AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEC48E51277A2F1500F781AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DEC48E58277A2F3B00F781AC /* ImageClassifierScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassifierScreen.swift; sourceTree = "<group>"; };
+		DEC48E5A277A32F500F781AC /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		DEC48E5C277A50F900F781AC /* ImageClassifierService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassifierService.swift; sourceTree = "<group>"; };
+		DEC48E5F277A513C00F781AC /* ClassifierResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifierResultModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +62,10 @@
 			isa = PBXGroup;
 			children = (
 				DEC48E4A277A2F1400F781AC /* DZ_8App.swift */,
-				DEC48E4C277A2F1400F781AC /* ContentView.swift */,
+				DEC48E58277A2F3B00F781AC /* ImageClassifierScreen.swift */,
+				DE8E9C2127831DED00BE9A10 /* ImageClassifierViewModel.swift */,
+				DEC48E5A277A32F500F781AC /* ImagePicker.swift */,
+				DEC48E5E277A511A00F781AC /* ImageClassifier */,
 				DEC48E4E277A2F1500F781AC /* Assets.xcassets */,
 				DEC48E50277A2F1500F781AC /* Preview Content */,
 			);
@@ -65,6 +78,16 @@
 				DEC48E51277A2F1500F781AC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DEC48E5E277A511A00F781AC /* ImageClassifier */ = {
+			isa = PBXGroup;
+			children = (
+				DEC48E5C277A50F900F781AC /* ImageClassifierService.swift */,
+				DE8E9C23278328E600BE9A10 /* MyImageClassifier.mlmodel */,
+				DEC48E5F277A513C00F781AC /* ClassifierResultModel.swift */,
+			);
+			path = ImageClassifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +160,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEC48E4D277A2F1400F781AC /* ContentView.swift in Sources */,
+				DEC48E5D277A50F900F781AC /* ImageClassifierService.swift in Sources */,
+				DEC48E60277A513C00F781AC /* ClassifierResultModel.swift in Sources */,
+				DE8E9C24278328E600BE9A10 /* MyImageClassifier.mlmodel in Sources */,
+				DE8E9C2227831DED00BE9A10 /* ImageClassifierViewModel.swift in Sources */,
+				DEC48E5B277A32F500F781AC /* ImagePicker.swift in Sources */,
+				DEC48E59277A2F3B00F781AC /* ImageClassifierScreen.swift in Sources */,
 				DEC48E4B277A2F1400F781AC /* DZ_8App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

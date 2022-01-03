@@ -11,7 +11,7 @@ import SwiftUI
 struct DZ_8App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ImageClassifierScreen()
         }
     }
 }
